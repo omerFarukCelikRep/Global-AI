@@ -8,4 +8,11 @@ for i in numbers:
     else:
         oddNumbers.append(i);
 
-print(oddNumbers);
+oddNumbers.extend(evenNumbers);
+
+newList = [];
+
+for i in oddNumbers:
+    newList.append(i*2);
+    print(newList[i]);
+
